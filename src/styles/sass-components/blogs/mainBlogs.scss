@@ -88,6 +88,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
       &-box{
         position: relative;
         box-shadow: 0 0 5rem rgba($color-exim-dark-grey,.5);
