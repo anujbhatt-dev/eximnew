@@ -1,0 +1,51 @@
+// abstracts
+@import "styles/abstracts/mixins";
+@import "styles/abstracts/variables";
+@import "styles/abstracts/animation";
+
+// base
+@import "styles/base/base";
+@import "styles/base/utils";
+
+//sass-components
+
+// nav
+@import "styles/sass-components/navigation/navigation";
+
+// Spinner
+@import "styles/sass-components/spinner/spinner";
+
+//landing
+@import "styles/sass-components/landing/landing-1";
+@import "styles/sass-components/landing/landing-bar";
+@import "styles/sass-components/landing/landing-2";
+@import "styles/sass-components/landing/landing-3";
+@import "styles/sass-components/landing/landing-4";
+@import "styles/sass-components/landing/landing-5";
+@import "styles/sass-components/landing/landing-6";
+@import "styles/sass-components/landing/landing-7";
+@import "styles/sass-components/landing/landing-8";
+@import "styles/sass-components/landing/landing-9";
+@import "styles/sass-components/landing/landing-10";
+@import "styles/sass-components/landing/landing-11";
+
+// pricing
+@import "styles/sass-components/pricing/cards";
+@import "styles/sass-components/pricing/faq";
+
+//about
+@import "styles/sass-components/about/about";
+
+// Course
+@import "styles/sass-components/course/course";
+
+//blog
+@import "styles/sass-components/blogs/mainBlogs";
+@import "styles/sass-components/blogs/blogs";
+@import "styles/sass-components/blogs/blog";
+
+//go to top
+@import "styles/sass-components/goToTop/goToTop";
+
+// footer
+@import "styles/sass-components/footer/footer";

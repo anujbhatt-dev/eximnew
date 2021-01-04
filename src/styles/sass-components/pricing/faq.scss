@@ -1,0 +1,46 @@
+.faq{
+  margin: 0 8rem;
+  background: $color-white;
+  &__box{
+
+    border-bottom: 2px dashed $color-exim-grey;
+    &_ques{
+      display:flex;
+      justify-content:space-between;
+      align-items: center;
+      padding: 3rem;
+      font-size: 2rem;
+      color: $color-exim-dark-grey;
+      font-weight: bold;
+      margin-right: 1rem;
+      &-times{
+        animation: rotate .5s ease-out;
+      }
+      &-downArrow{
+        animation: rotate2 .5s ease-out;
+      }
+    }
+    &_answer{
+      font-size: 1.6rem  ;
+      left: 0;
+      color: $color-exim-dark-grey;
+      padding: 2rem 3rem;
+      overflow: hidden;
+      animation: faq .5s ease-out;
+    }
+  }
+}
+@include respond(tab-land){
+  .faq{
+    margin: 0 2rem;
+
+    &__box{
+      &_ques{
+         font-size: 1.8rem;
+      }
+      &_answer{
+         font-size: 1.4rem;
+      }
+    }
+  }
+};

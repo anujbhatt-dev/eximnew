@@ -1,0 +1,39 @@
+.landing__6{
+  margin-bottom: 8rem;
+  &_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60rem;
+    perspective: 1000px;
+    & img{
+      // border-radius: 18px;
+      // outline: 1.5rem solid $color-exim-dark-grey;
+      // outline-offset: 1.5rem;
+    width: 25rem;
+    }
+    &-text{
+      margin-left: 8rem;
+      & div{
+        margin-bottom: 1rem;
+        color: $color-grey;
+        font-size: 1.8rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+@include respond(tab-land){
+   .landing__6{
+      &_box{
+        flex-direction: column;
+        text-align: center;
+        &-text{
+          margin: 2rem;
+        }
+        &  img{
+          width: 25rem;
+        }
+      }
+   }
+};

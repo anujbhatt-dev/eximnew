@@ -1,0 +1,110 @@
+.course{
+  background: $color-white;
+  &__btnWrap{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 4rem 15rem;
+    &_btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 26rem;
+      padding: 1rem 2rem;
+      border: none;
+      background: $color-exim-blue;
+      font-size: 2rem;
+      color: $color-white;
+      border-radius: 18px;
+      &:hover{
+        transform: translateY(-3px);
+        box-shadow: 0rem 3rem 3rem -1rem rgba($color-exim-blue,.7);
+      }
+      &:active{
+        transform: translateY(0px);
+        box-shadow: 0rem 1rem 3rem -1rem rgba($color-exim-blue,.7);
+      }
+      & span{
+        margin-right: 6rem;
+      }
+    }
+  }
+  &__wrapper{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 6rem;
+    margin: 4rem 15rem;
+    z-index: 0;
+    &_box{
+      &-lock{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        font-size: 1rem;
+        width: 80%;
+        & div{
+          text-align: right;
+          width: 100%;
+        }
+        & img{
+        }
+      }
+      &:hover  .small-lock{
+        animation : shake .5s linear infinite;
+      }
+      height: 20rem;
+      overflow: hidden;
+      position: relative;
+      border-radius: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 100;
+      &-img{
+         position: absolute;
+         bottom: 0;
+         animation: wave 5s linear infinite;
+         z-index: -1;
+      }
+      &-title{
+        color:$color-exim-dark-grey;
+        text-align:center;
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
+        font-weight: bold;
+        padding: 0 3rem;
+      }
+      &-count{
+        position: absolute;
+        top: 0;
+        left:0;
+        font-size: 2.4rem;
+        color: $color-white;
+        background: $color-exim-dark-grey;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+//        transform: translate(-50%,-50%);
+      }
+    }
+  }
+  @include respond(tab-land){
+    &__btnWrap{
+      justify-content: center;
+      margin: 2rem;
+    }
+    &__wrapper{
+      margin: 2rem;
+      grid-gap: 2rem;
+      grid-template-columns: repeat(1, 1fr);
+      &_box{
+        max-width: 40rem;
+        margin: auto;
+      }
+    }
+  }
+}

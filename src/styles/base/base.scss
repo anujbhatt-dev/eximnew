@@ -1,0 +1,162 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// ::selection{
+//    background: $color-primary-blue;
+//
+// }
+
+html{
+  // 1 rem
+  // scroll-behavior: smooth;
+  font-size: 60.5%;
+  font-family: sans-serif;
+  letter-spacing: .5px;
+  font-family: 'Montserrat', sans-serif;
+  // color:$color-gig-font;
+
+  // overflow-y: scroll;
+
+  @include respond(tab-land){
+    font-size: 56.25%;
+  }
+  @include respond(tab-port){
+    font-size: 50%;
+  }
+  @include respond(phone){
+    font-size: 45%;
+  }
+  @include respond(big-desktop){
+    font-size: 75%;
+  }
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 12rem;
+  width: 100vw;
+  @include respond(tab-land){
+    padding: 0 1rem;
+    background-image: none;
+  }
+}
+a{
+  text-decoration: none;
+  // color: $color-white;
+  &:hover,&:active{
+    // color: $color-white;
+    text-decoration: underline;
+  }
+}
+//
+// .App{
+//   width: 100vw;
+// }
+
+
+.hr{
+  border: none;
+  border-bottom: .5px solid rgba($color-grey,.3);
+  box-shadow: 0rem 1rem 5rem rgba($color-grey,.5);
+}
+.hv{
+  border: none;
+  border-right: 1px solid rgba($color-white,.3);
+  height: 10rem;
+  box-shadow: 0rem 1rem 5rem rgba($color-grey,.1);
+  @include respond(tab-port){
+    display: none;
+  }
+}
+textarea{
+  max-width: 70vw;
+  padding: 1rem;
+}
+p{
+  color: $color-grey;
+}
+h3{
+  // color: $color-pen-primary;
+  margin-bottom: 1rem;
+}
+// .layout{
+//   // width: 100vw;
+// }
+button{
+
+  &:hover{
+    cursor: pointer;
+  }
+  &:focus{
+    outline:none;
+  }
+}
+.heading-primary{
+  font-size: 3.6rem;
+  color: $color-exim-dark-grey;
+  font-weight: bolder;
+  text-transform: uppercase;
+  @include respond(tab-port){
+    font-size: 2.2rem;
+  };
+}
+.heading-secondary{
+  font-size: 3.6rem;
+  color: $color-exim-grey;
+  font-weight: bolder;
+  margin-left: 25rem;
+}
+ul{
+  list-style: none;
+}
+.btn__buy{
+  padding:  2rem 0;
+  font-weight: bold;
+  font-size: 1.8rem;
+  background: $color-exim-blue;
+  margin: 2rem auto;
+  border: none;
+  color: $color-white;
+  display:flex;
+  border-radius: 15px;
+  align-items: center;
+  width: 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  & img{
+    // position: absolute;
+    // right: 3rem;
+    margin-left: 2rem;
+    height: 2rem;
+  }
+  transition: all .3s ;
+  &:hover{
+    transform: translateY(-3px);
+    box-shadow: 0rem 3rem 3rem -1rem rgba($color-exim-blue,.7);
+  }
+  &:active{
+    transform: translateY(0px);
+    box-shadow: 0rem 1rem 3rem -1rem rgba($color-exim-blue,.7);
+  }
+}
+.landing{
+  // overflow-x: hidden;
+
+  @include respond(tab-land){
+    overflow-x: hidden;
+    background-image: none;
+  }
+}
+a {
+  &:hover{
+    text-decoration: none;
+  }
+}

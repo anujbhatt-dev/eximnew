@@ -1,0 +1,207 @@
+.landing__10{
+
+  margin-bottom: 10rem;
+  position:relative;
+  width: 100vw;
+  left: -12rem;
+  overflow: visible;
+  height: 80vh;
+  &_webinar{
+    animation: detail .3s linear ;
+    position:fixed;
+    transform: translate(-50%,-50%);
+    z-index: 500;
+    display:flex;
+    flex-direction: column;
+    top: 50%;
+    left:50%;
+    padding: 5rem 2rem;
+    background: $color-white;
+    box-shadow: 0rem 0rem 2rem rgba($color-black,.5);
+    border-radius: 8px;
+    &-name,&-email{
+      border: 1px solid rgba($color-black,.4);
+      padding: 2rem 4rem;
+      text-align:center;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+
+    }
+    & img{
+      height: 2rem;
+      position:absolute;
+      top: 2rem;
+      right:2rem;
+      cursor: pointer;
+    }
+    & p{
+      width: 20rem;
+      margin: auto;
+      margin-bottom: 2rem;
+      text-align:center;
+      color: $color-black;
+    }
+    &-submit{
+      // margin: auto;
+      padding: 2rem;
+      border: none;
+      border-radius: 10px;
+      background: $color-exim-blue;
+      color: $color-white;
+      transition: all .3s ;
+      cursor: pointer;
+      &:hover{
+        transform: translateY(-3px);
+        box-shadow: 0rem 3rem 3rem -1rem rgba($color-exim-blue,.7);
+      }
+      &:active{
+        transform: translateY(0px);
+        box-shadow: 0rem 1rem 3rem -1rem rgba($color-exim-blue,.7);
+        outline: none;
+      }
+    }
+  }
+  &_img{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  &_play{
+    position:absolute;
+    right: 70%;
+    top: 30%;
+    z-index: 2;
+    height: 10rem;
+  }
+  &_orbits{
+    position:absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    animation: scaleY 10s linear infinite;
+    opacity: .5;
+  }
+  &_text{
+    font-size: 4.5rem;
+    position:absolute;
+    left: 10%;
+    top: 23%;
+    z-index: 1;
+    color: $color-white;
+    z-index: 3;
+    &_1{
+      font-size: 3rem;
+      position:absolute;
+      left: 35%;
+      top: 23%;
+      z-index: 1;
+      // width: 35rem;
+      color: $color-white;
+      font-weight: bold;
+      & h2{
+        font-weight: lighter;
+        font-size: 2rem;
+        margin: .5rem;
+      }
+      & h4{
+        font-weight: lighter;
+        font-size: 2rem;
+        margin: .5rem;
+      }
+      & div{
+        max-width:50rem;
+
+      }
+    }
+    &_2,&_3,&_4{
+      text-align: center;
+      font-size: 3rem;
+      position:absolute;
+      z-index: 1;
+      // width: 35rem;
+      color: $color-white;
+      font-weight: bold;
+      bottom: 12%;
+      & h3{
+        font-weight: bold;
+        font-size: 2rem;
+        margin: .5rem;
+      }
+      & h5{
+        font-weight: lighter;
+        font-size: 1.2rem;
+        margin: .5rem;
+      }
+    }
+    &_2{
+      left: 10%;
+
+    }
+    &_3{
+       left: 34%;
+    }
+    &_4{
+       left: 50%;
+    }
+    & a{
+      bottom: -5rem;
+      left: 0;
+      width: 26rem;
+    }
+  }
+  @include respond(tab-land){
+    left: -1rem;
+    height: 50vh;
+    overflow: hidden;
+    &_img{
+      object-fit: fill;
+      object-position: center;
+      height: 100%;
+    }
+    &_play{
+      position:absolute;
+      right: 30%;
+      top: 73%;
+      z-index: 0;
+      height: 10rem;
+      display: none;
+    }
+  &_text{
+    font-size: 2.5rem;
+     &_1{
+       // display: none;
+       left:50%;
+       & h2{
+         font-size: 1rem;
+       }
+       & h4{
+         font-size: .6rem;
+       }
+       & div{
+          font-size: 1.2rem;
+       }
+     }
+     &_2,&_3,&_4{
+       & h3{
+         font-size: 1.2rem;
+       }
+       & h5{
+         font-size: .8rem;
+       }
+     }
+     &_2{
+       left:5%;
+     }
+     &_3{
+       left: 35%;
+     }
+     &_4{
+
+     }
+  }
+ }
+}

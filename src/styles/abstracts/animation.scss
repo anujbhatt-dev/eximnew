@@ -1,0 +1,279 @@
+@keyframes slide {
+    0%{
+      left:0;
+    }
+    50%{
+      left:-100%;
+    }
+    100%{
+      left:0%;
+    }
+}
+
+@keyframes detail {
+   0%{
+     opacity: 0;
+     transform:  translate(-50%,-50%) scale(1.5);
+   }
+   100%{
+     opacity: 1;
+     transform: translate(-50%,-50%) scale(1);
+   }
+}
+
+
+@keyframes faq {
+  0%{
+    transform: translateY(-200%);
+    opacity: 0
+  }
+  80%{
+    transform: translateY(20%);
+    opacity: 1;
+
+  }
+  100%{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+
+@keyframes slides {
+  0%{
+    left: 32%;
+  }
+  100%{
+    left: 81.5%;
+  }
+}
+
+@keyframes slide-reverse {
+  0%{
+    left: -19.5%;
+  }
+  100%{
+    left: -77%;
+  }
+}
+
+@keyframes height {
+    0%{
+      height: 0;
+    }
+    100%{
+      height: 100%;
+    }
+}
+
+@keyframes scale {
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.1);
+    }
+    100%{
+      transform: scale(1);
+    }
+}
+
+@keyframes scaleY {
+    0%{
+      transform: scaleY(1);
+    }
+    50%{
+      transform: scaleY(1.1);
+    }
+    100%{
+      transform: scaleY(1);
+    }
+}
+
+@keyframes rotate {
+    0%{
+      transform: rotate(0);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes wave {
+    0%{
+      transform: scaleX(1);
+    }
+    25%{
+      transform: scaleX(1.5);
+    }
+    50%{
+      transform: scaleX(1);
+    }
+    75%{
+      transform: scaleX(1.5);
+    }
+    100%{
+      transform: scaleX(1);
+    }
+}
+
+
+@keyframes rotate2 {
+    0%{
+      transform: rotate(0);
+    }
+    100%{
+      transform: rotate(-360deg);
+    }
+}
+
+
+@keyframes bubble {
+    0%{
+      transform: rotate(0deg) scale(1);
+
+    }
+    50%{
+      transform: rotate(155deg)  scale(1.1);
+    }
+    75%{
+      transform: rotate(270deg)  scale(.85);
+    }
+    100%{
+      transform: rotate(360deg)  scale(1);
+    }
+}
+
+@keyframes shake {
+    0%{
+      transform: rotate(0deg);
+
+    }
+    50%{
+      transform: rotate(10deg);
+    }
+    75%{
+      transform: rotate(-10deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+}
+
+
+@keyframes color {
+   0% {
+      border: .5rem solid $color-exim-blue;
+      // border-radius: 50%;
+   }
+   12%, 24% {
+      border: .5rem solid $color-white;
+      // border-radius: 50%;
+   }
+   30% {
+     border: .5rem solid $color-exim-green;
+     // border-radius: 50%;
+   }
+   48% {
+      border: .5rem solid $color-lightblue;
+      // border-radius: 50%;
+   }
+   60% {
+      border: .5rem solid $color-secondary-blue;
+      // border-radius: 50%;
+   }
+   61%{
+     border: .5rem solid $color-cyan;
+     // border-radius: 50%;
+   }
+   100%{
+     border: .5rem solid tomato;
+     // border-radius: 50%;
+   }
+}
+
+
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes wrapper2 {
+    0%{
+      transform: scale(1);
+    }
+    25%{
+      transform: scale(5);
+      height: 5rem;
+      width: 5rem;
+    }
+    // 50%{
+    //
+    // }
+    50%{
+      height: 25rem;
+      width: 25rem;
+      transform: scale(6.5);
+    }
+    75%{
+      // height: 25rem;
+      // width: 25rem;
+      // transform: scale(6.5) translateY(50rem);
+      height: 25rem;
+      width: 25rem;
+      transform: scale(6.5) translateY(12rem) translateX(3.5rem);
+    }
+    100%{
+      height: 25rem;
+      width: 25rem;
+      transform: scale(6.5) translateY(18rem) translateX(-3.5rem);
+    }
+}
+
+
+
+@keyframes wrapper3 {
+    0%{
+      height: 25rem;
+      width: 25rem;
+      transform: scale(6.5) translateY(18rem) translateX(3.5rem);
+      border-radius: 50%;
+    }
+    35%{
+      height: 25rem;
+      width: 25rem;
+      transform: scale(6.5) translateY(17rem) translateX(1.5rem);
+      border-radius:10%;
+    }
+    65%{
+      height: 25rem;
+      width: 25rem;
+      transform: scale(6.5) translateY(18rem) translateX(-1.5rem);
+      border-top-right-radius:50%;
+    }
+    100%{
+      border-radius: 50%;
+      height: 25rem;
+      width: 25rem;
+      transform: scale(6.5) translateY(18rem) translateX(3.5rem);
+    }
+}

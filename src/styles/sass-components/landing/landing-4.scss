@@ -1,0 +1,127 @@
+.landing__4{
+  position: relative;
+  margin: 10rem 0;
+  &_background{
+    position: absolute;
+    // transform: translate(-50%,0%);
+    // top: 50%;
+    transform: translateX(-50%);
+    left:50%;
+    z-index: 1;
+  }
+  & > .blank{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    height: calc(100%/3);
+    color: transparent;
+    width: 100%;
+    background: $color-white;
+    // opacity: .5;
+    &__1{
+      left:32%;
+      // animation: slide 3s linear 2;
+      animation-fill-mode: forwards;
+    }
+    &__2{
+      left:-19.5%;
+      top: calc((100%/3));
+      // animation: slide-reverse 3s linear 2;
+      animation-fill-mode: forwards;
+    }
+    &__3{
+      left:18%;
+      top: calc((100%/3)*2);
+      // animation: slide 3s linear 2;
+      animation-fill-mode: forwards;
+    }
+  }
+  &_1,&_2,&_3{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+
+    & > div,& > img{
+      opacity: 1;
+      margin: 8rem 8rem;
+    }
+  }
+  &_1,&_2,&_3{
+    // margin-top: 5rem;
+    &-text{
+      background: $color-white;
+      z-index: 2;
+      &--big{
+         margin-bottom: 3rem;
+      }
+      &--small{
+        font-size: 3rem;
+        font-style: italic;
+        color: $color-exim-dark-grey;
+        margin-bottom: 1rem;
+      }
+      &--smaller{
+        font-size: 1.8rem;
+        color: $color-grey;
+        line-height: 1.5;
+        & span{
+          color: $color-black;
+          font-style: italic;
+        }
+      }
+    }
+    &-image{
+      display: flex;
+      justify-content: center;
+      z-index: 2;
+      align-self: baseline;
+      align-items: center;
+    }
+  }
+  // &_1-text{
+  //    background: transparent;
+  // }
+}
+@include respond(tab-port){
+  .landing__4{
+
+    &_background{
+      transform: scale(0.9);
+      left: 0;
+      width: 100vw;
+    }
+    &_1-text{
+       background: $color-white;
+    }
+    &_1,&_3{
+      flex-direction: column;
+    }
+    &_2{
+      flex-direction: column-reverse;
+    }
+    & > .blank{
+      opacity: 1;
+    }
+    &_1,&_3,&_2{
+      & > div,& > img{
+        margin: 5rem auto;
+      }
+      & > img{
+        width: 95%;
+      }
+      &-text{
+        text-align: center;
+        &--big{
+
+        }
+        &--small{
+           font-size: 1.8rem;
+        }
+        &--smaller{
+           font-size: 1.4rem;
+        }
+      }
+    }
+  }
+};
