@@ -302,8 +302,9 @@ import indiaPort from "../../../assets/images/indiaPort.png"
           <div className="landing">
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <title>EXIM EDUCATION {this.props.page}</title>
+                    <title>Export & Import Course in Mumbai | Exim Courses Online: EXIM EDUCATION</title>
                     <link rel="canonical" href={this.props.url} />
+                    <meta name="Enroll today for Exim course/ Export Import course in Mumbai to take your career a step ahead. Online training facility is also available for import and export courses. Call now!" content="Helmet application" />
                 </Helmet>
 
                {

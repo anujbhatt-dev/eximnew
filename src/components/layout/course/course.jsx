@@ -98,11 +98,12 @@ import "aos/dist/aos.css"
 
       return (
          <div data-aos="zoom-out" className="course">
-                 <Helmet>
-                     <meta charSet="utf-8" />
-                     <title>EXIM EDUCATION {this.props.page}</title>
-                     <link rel="canonical" href={this.props.url+"/courses"} />
-                 </Helmet>
+         <Helmet>
+             <meta charSet="utf-8" />
+             <title>Export and Import Course Details | Exim Course Details: EXIM EDUCATION</title>
+             <link rel="canonical" href={this.props.url+"/courses"} />
+             <meta desc="Find the latest and revised Export and Import course details at EXIM EDUCATION. For detailed information, inquire today!"/>
+         </Helmet>
                  <h1 className="heading-primary landing__3_heading">import & export course details / exim course details</h1>
                  <div  className="course__btnWrap">
                      <a rel="noreferrer" href="http://eximeducation.com/course/pdf/Cousre_01.pdf" target="_blank" className="course__btnWrap_btn"><span>Detailed</span><img src={file} alt=""/></a>

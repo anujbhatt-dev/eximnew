@@ -64,8 +64,9 @@ import { Link } from "react-router-dom";
            <div data-aos="zoom-out" className="pricing">
                <Helmet>
                    <meta charSet="utf-8" />
-                   <title>EXIM EDUCATION {this.props.page}</title>
+                   <title>Import Export Course Fees in Mumbai | Exim Course Fees in India: EXIM EDUCATION</title>
                    <link rel="canonical" href={this.props.url+"/pricing"} />
+                   <meta desc="Know the latest and revised Import Export Course Fees in Mumbai, India. For more details, inquire today at EXIM EDUCATION."/>
                </Helmet>
                {
                  // head
