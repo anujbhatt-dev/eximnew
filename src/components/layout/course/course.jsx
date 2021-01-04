@@ -106,7 +106,7 @@ import "aos/dist/aos.css"
          </Helmet>
                  <h1 className="heading-primary landing__3_heading">import & export course details / exim course details</h1>
                  <div  className="course__btnWrap">
-                     <a rel="noreferrer" href="http://eximeducation.com/course/pdf/Cousre_01.pdf" target="_blank" className="course__btnWrap_btn"><span>Detailed</span><img src={file} alt=""/></a>
+                     <a rel="noreferrer" href="http://eximeducation.com/course/pdf/Course_01.pdf" target="_blank" className="course__btnWrap_btn"><span>Detailed</span><img src={file} alt=""/></a>
                  </div>
                  <div className="course__wrapper">
                      {
