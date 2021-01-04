@@ -382,7 +382,7 @@ import indiaPort from "../../../assets/images/indiaPort.png"
                   <h1 className="heading-primary landing__3_heading">export & import course details</h1>
                   <div className="landing__3_box">
                       <div className="landing__3_box-text">
-                          <div className="landing__3_box-text--big">ABOUT EXIM EDUCATION</div>
+                          <div className="landing__3_box-text--big">ABOUT EXIM EDUCATION - import export training centre in mumbai</div>
                           <div className="landing__3_box-text--small">
                           Exim Education is training centre of Indiaport. We provide helping hand to India’s
                            export business to ease its global trade.Exim Education has taken an initiative to
@@ -394,7 +394,7 @@ import indiaPort from "../../../assets/images/indiaPort.png"
                       </div>
 
                       <div className="landing__3_box-text">
-                          <div className="landing__3_box-text--big">ADAPTIVE LEARNING - import export training centre in mumbai</div>
+                          <div className="landing__3_box-text--big">ADAPTIVE LEARNING</div>
                           <ul>
                             <li>
                                  <img data-aos-once="true" data-aos="fade-right" data-aos-duration="1500" src={section} alt=""/>
@@ -436,7 +436,7 @@ import indiaPort from "../../../assets/images/indiaPort.png"
                             </li>
                           </ul>
                       </div>
-                      <Link to="/course" style={{width:"26rem"}} className="landing__1_text-btns--join landing__3_box-btn"><span> 0</span> <img src={arrow} alt=""/></Link>
+                      <Link to="/courses" style={{width:"26rem"}} className="landing__1_text-btns--join landing__3_box-btn"><span> 0</span> <img src={arrow} alt=""/></Link>
                   </div>
               </div>
 
