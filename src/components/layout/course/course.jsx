@@ -99,7 +99,10 @@ import "aos/dist/aos.css"
       return (
          <div data-aos="zoom-out" className="course">
          <Helmet>
-             <meta charSet="utf-8" />
+             <meta
+             name="description"
+             content="Export and Import Course Details | Exim Course Details: EXIM EDUCATION"
+             charSet="utf-8" />
              <title>Export and Import Course Details | Exim Course Details: EXIM EDUCATION</title>
              <link rel="canonical" href={this.props.url+"/courses"} />
              <meta desc="Find the latest and revised Export and Import course details at EXIM EDUCATION. For detailed information, inquire today!"/>
