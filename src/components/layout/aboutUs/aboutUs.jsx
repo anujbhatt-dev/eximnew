@@ -136,64 +136,51 @@ import {Helmet} from "react-helmet"
               <div className="about__3">
                   <div className="about__3_row">
                      <div className="about__3_row-box">
-                        <h2 className="about__3_row-box--head">ADAPTIVE LEARNING</h2>
+                        <h2 className="about__3_row-box--head">Education </h2>
                         <ul>
-                           <li>Online freight marketplace</li>
-                           <li>Custom clearance</li>
-                           <li>Local transport</li>
-                           <li>Break and Bulk cargo</li>
-                           <li>Insurance</li>
+                           <li>Mobile App training</li>
+                           <li>School seminar</li>
+                           <li>Online education </li>
+                           <li>Classroom training </li>
+                           <li>Enterprise training </li>
+
+
+                        </ul>
+                     </div>
+                     <div className="about__3_row-box">
+                        <h2 className="about__3_row-box--head">Services</h2>
+                        <ul>
+                           <li><a href="https://www.indiaport.in/">Indiaport.in</a></li>
+                           <li>Insurance service</li>
+                           <li>Freight forwarding</li>
+                           <li>Custom House agents</li>
+                           <li>Exim Consultency service</li>
                         </ul>
                      </div>
 
                      <div className="about__3_row-box">
-                        <h2 className="about__3_row-box--head">updates</h2>
+                        <h2 className="about__3_row-box--head">Tools</h2>
                         <ul>
-                           <li>education</li>
                            <li>Blogs</li>
-                           <li>News</li>
-                           <li>Vessel Schedule</li>
+                           <li>CBM Calculator</li>
+                           <li>Duty Calculator</li>
+                           <li>Custom Docs generate</li>
                         </ul>
                      </div>
 
 
                      <div className="about__3_row-box">
-                        <h2 className="about__3_row-box--head">TOOLS</h2>
+                        <h2 className="about__3_row-box--head">Digital Support</h2>
                         <ul>
-                           <li>Custom docs generate</li>
-                           <li>Duty calculator</li>
-                           <li>CBM calculator</li>
-                           <li>Container Tracking</li>
-                           <li>Professional quote system</li>
-                        </ul>
-                     </div>
-
-                     <div className="about__3_row-box">
-                        <h2 className="about__3_row-box--head">DATA</h2>
-                        <ul>
-                           <li>HS code finder</li>
+                           <li>SEO</li>
                            <li>Export data</li>
+                           <li>Digital Marketing</li>
+                           <li>Google Ads setup</li>
+                           <li>Ecommerce Website setup</li>
                         </ul>
                      </div>
-                  </div>
-                  <div className="about__3_row">
-                    <div className="about__3_row-box">
-                       <h2 className="about__3_row-box--head">FREIGHT SEARCH</h2>
-                       <ul>
-                          <li>Online freight marketplace</li>
-                          <li>Custom clearance</li>
-                          <li>Local transport</li>
-                          <li>Break and Bulk cargo</li>
-                          <li>Insurance</li>
-                       </ul>
-                    </div>
 
-                    <div className="about__3_row-box about__3_row-box-last">
-                       <h2 className="about__3_row-box--head">EXTRA</h2>
-                       <ul>
-                          <li>POWERED WITH SPECIAL TEAM AND SUPPORT SYSTEM</li>
-                       </ul>
-                    </div>
+
                   </div>
               </div>
 
@@ -212,57 +199,62 @@ import {Helmet} from "react-helmet"
 
               <h1 className="heading-primary landing__3_heading">our team</h1>
               <div className="about__3">
-                  <div className="about__3_row">
-                     <div className="about__3_row-box">
-                        <h2 className="about__3_row-box--head">Sanesh Sagvekar</h2>
-                        <ul>
-                           <li>Front & Back-end developer
-& photographer</li>
-                        </ul>
-                     </div>
+
 
                      <div className="about__3_row-box">
                         <h2 className="about__3_row-box--head">Vedant Kothari</h2>
                         <ul>
-                           <li>founder and chief</li>
+                           <li>Founder of EximEducation, a chef in leisure time </li>
+                        </ul>
+                     </div>
+                     <div className="about__3_row">
+                     <div className="about__3_row-box">
+                        <h2 className="about__3_row-box--head">Sanesh Sagvekar</h2>
+                        <ul>
+                           <li>Front & back end developer and a great photographer </li>
                         </ul>
                      </div>
 
 
                      <div className="about__3_row-box">
-                        <h2 className="about__3_row-box--head">Karan Randhir</h2>
+                        <h2 className="about__3_row-box--head">Sagar & Anuj</h2>
                         <ul>
-                           <li>Frontend developer
-& guitarist</li>
+                           <li>Website developer and a beautiful guitarist</li>
                         </ul>
                      </div>
 
                      <div className="about__3_row-box">
-                        <h2 className="about__3_row-box--head">Promod Kodag</h2>
+                        <h2 className="about__3_row-box--head">Zeba Barudgar</h2>
                         <ul>
-                           <li>project manager and singer</li>
+                           <li>Our Edu tech-head, content writer and a poet when in spirit</li>
                         </ul>
                      </div>
                   </div>
                   <div className="about__3_row">
                     <div className="about__3_row-box">
-                       <h2 className="about__3_row-box--head">Kyati Kothari</h2>
+                       <h2 className="about__3_row-box--head">Ritika Tatiya</h2>
                        <ul>
-                          <li>RND Business model,finance and snowboarding</li>
+                          <li>Digital marketer, content creator and a wanderlust lover</li>
                        </ul>
                     </div>
 
                     <div className="about__3_row-box">
-                       <h2 className="about__3_row-box--head">Zeba Barudgar</h2>
+                       <h2 className="about__3_row-box--head">Rushikesh Kamble</h2>
                        <ul>
-                          <li>edu tech head and poet</li>
+                          <li>Graphics designer UI/UX and a sports enthusiast</li>
+                       </ul>
+                    </div>
+                    <div className="about__3_row-box">
+                       <h2 className="about__3_row-box--head">Pramod Kodag</h2>
+                       <ul>
+                          <li>Developer and an excellent singer</li>
                        </ul>
                     </div>
 
                     <div className="about__3_row-box">
-                       <h2 className="about__3_row-box--head">Ca Abhishek Shah</h2>
+                       <h2 className="about__3_row-box--head">CA Abhishek Shah</h2>
                        <ul>
-                          <li>financial services and traveler</li>
+                          <li>Provides financial service and an explorer</li>
                        </ul>
                     </div>
                   </div>
