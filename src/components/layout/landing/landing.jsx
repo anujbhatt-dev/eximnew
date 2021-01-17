@@ -91,7 +91,7 @@ import indiaPort from "../../../assets/images/indiaPort.png"
         eportValue:6456744,
         numbersVisible:false,
         webinarDay:"sunday",
-        webinarDate:"12 November, 2020",
+        webinarDate:"24th January, 2021",
         webinarTime:"12:30 PM",
         webinarMentor:"Zehan Shah",
         webinarTopic:"Advance technology and government new laws applied in 2020 module ",
@@ -300,12 +300,12 @@ import indiaPort from "../../../assets/images/indiaPort.png"
 
       return (
           <div className="landing">
-                <Helmet>
+                {/* <Helmet>
                     <meta charSet="utf-8" />
                     <title>Export & Import Course in Mumbai | Exim Courses Online: EXIM EDUCATION</title>
                     <link rel="canonical" href={this.props.url} />
-                    <meta name="Enroll today for Exim course/ Export Import course in Mumbai to take your career a step ahead. Online training facility is also available for import and export courses. Call now!" content="Helmet application" />
-                </Helmet>
+                    <meta name="description" content="Enroll today for Exim course/ Export Import course in Mumbai to take your career a step ahead. Online training facility is also available for import and export courses. Call now!"/>
+                </Helmet> */}
 
                {
                  // screen 1
@@ -382,7 +382,7 @@ import indiaPort from "../../../assets/images/indiaPort.png"
                   <h1 className="heading-primary landing__3_heading">export & import course details</h1>
                   <div className="landing__3_box">
                       <div className="landing__3_box-text">
-                          <div className="landing__3_box-text--big">ABOUT EXIM EDUCATION</div>
+                          <div className="landing__3_box-text--big">ABOUT EXIM EDUCATION - import export training centre in mumbai</div>
                           <div className="landing__3_box-text--small">
                           Exim Education is training centre of Indiaport. We provide helping hand to India’s
                            export business to ease its global trade.Exim Education has taken an initiative to
@@ -394,7 +394,7 @@ import indiaPort from "../../../assets/images/indiaPort.png"
                       </div>
 
                       <div className="landing__3_box-text">
-                          <div className="landing__3_box-text--big">ADAPTIVE LEARNING - import export training centre in mumbai</div>
+                          <div className="landing__3_box-text--big">ADAPTIVE LEARNING</div>
                           <ul>
                             <li>
                                  <img data-aos-once="true" data-aos="fade-right" data-aos-duration="1500" src={section} alt=""/>
@@ -436,7 +436,7 @@ import indiaPort from "../../../assets/images/indiaPort.png"
                             </li>
                           </ul>
                       </div>
-                      <Link to="/course" style={{width:"26rem"}} className="landing__1_text-btns--join landing__3_box-btn"><span> 0</span> <img src={arrow} alt=""/></Link>
+                      <Link to="/courses" style={{width:"26rem"}} className="landing__1_text-btns--join landing__3_box-btn"><span> 0</span> <img src={arrow} alt=""/></Link>
                   </div>
               </div>
 
@@ -461,9 +461,9 @@ import indiaPort from "../../../assets/images/indiaPort.png"
                   <div className="landing__4_2">
                       <img className="landing__4_2-image" src={s2} alt=""/>
                       <div  className="landing__4_2-text">
-                           <div className="landing__4_2-text--big heading-primary">Your quality and standard of living is in your hand
+                           <div className="landing__4_2-text--big heading-primary">Not You & I but We be on the journey full of support and growth.
 </div>
-                           <div className="landing__4_2-text--small">Not You & I but We be on the journey full of support and growth.</div>
+                    
                            <div className="landing__4_2-text--smaller">Your keenness to learn more and get hands in the international market can be done right by
 smooth payment procedure. Quick pay and get the grip to course, live lectures, research and
 get ready for growing stability </div>
@@ -549,7 +549,7 @@ crossing national borders.</div>
               }
 
               <div className="landing__8">
-                  <h1 className="heading-primary landing__3_heading">export & import course to success</h1>
+                  <h1 className="heading-primary landing__3_heading">The fields you can step in</h1>
                   <div className="landing__8_bar">
                       <div onClick={()=>this.coureseToSuccess(0)} className={(this.state.cosTitle==="Exim management")?"selectedIcon landing__8_bar-box":"landing__8_bar-box" }>
                           {this.state.cosTitle==="Exim management"?<img src={whiteEM} alt=""/>:<img src={eximManagement} alt=""/>}
@@ -620,7 +620,7 @@ crossing national borders.</div>
                         <div className="landing__9_box-1">
                             <div className="landing__9_box-1--top">
                                 <h1><img className="img__4" src={tv} alt=""/><span>Exim consultancy</span></h1>
-                                <div></div>
+                                <div>Manage and supervise the exportation process for our clients</div>
                             </div>
                             <div className="landing__9_box-1--top">
                                 <h1><img className="img__5" src={crownBig} alt=""/><span>Quality Service</span></h1>
