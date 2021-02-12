@@ -8,7 +8,9 @@ import Footer from "./footer/footer"
 import GoToTop from "./goToTop/goToTop"
 import { Switch, Route } from "react-router-dom";
 import BlogsPage from "./blog_page/blog_page"
-
+import BlogsManual from "./blogs_manual/blogs_manual"
+import BlogMain from "./blog_page/blog_main/blog_main"
+import BlogManual from "./blogs_manual/blog_manual/blog_manual"
 class Layout extends Component{
 
   state={
@@ -25,8 +27,11 @@ class Layout extends Component{
                <Route exact  path="/">
                  <Landing page="HOME" url={this.state.url}/>
                </Route>
-               <Route   path="/blogs">
-                 <BlogsPage page="BLOGS"  url={this.state.url}/>
+               <Route  exact path="/blogs" url={this.state.url}>
+                 <BlogsManual page="BLOGS"  />
+              </Route>
+              <Route  exact path="/blog/:id" url={this.state.url}>
+                 <BlogManual page="BLOGS"  />
               </Route>
 
               <Route exact  path="/pricing">

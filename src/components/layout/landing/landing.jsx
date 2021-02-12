@@ -326,7 +326,7 @@ import indiaPort from "../../../assets/images/indiaPort.png"
                     </div>
 
                     <div className="landing__1_text-btns">
-                        <Link  to="/pricing" className="landing__1_text-btns--join">Start Today <span> 0</span> <img src={arrow} alt=""/></Link>
+                        <a  href="#starttoday" className="landing__1_text-btns--join">Start Today <span> 0</span> <img src={arrow} alt=""/></a>
                         {
                           // <button className="landing__1_text-btns--trial">Trail</button>
                         }
@@ -378,7 +378,7 @@ import indiaPort from "../../../assets/images/indiaPort.png"
                 // 3
               }
 
-              <div className="landing__3">
+              <div id="starttoday" className="landing__3">
                   <h1 className="heading-primary landing__3_heading">export & import course details</h1>
                   <div className="landing__3_box">
                       <div className="landing__3_box-text">
