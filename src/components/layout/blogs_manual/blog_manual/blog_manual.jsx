@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import { Link, withRouter } from 'react-router-dom'
 import ReactWhatsapp from 'react-whatsapp'
+import Aos from "aos"
 
 
  class BlogManual extends Component {
@@ -17,6 +18,12 @@ import ReactWhatsapp from 'react-whatsapp'
         if(!this.props.location.state)
         this.props.history.push("/blogs");
        this.setState({blog:this.props.location.state});
+
+       window.scrollTo({top:0,behavior:"smooth"});
+      Aos.init({
+         duration: 1500,
+         delay: 100,
+       });
 
     }
 
@@ -43,7 +50,7 @@ import ReactWhatsapp from 'react-whatsapp'
                       <td dangerouslySetInnerHTML={{__html:this.state.blog.content}} />
 
                       <div className="blog__box_flex">
-                         <Link to={"/blogs/main"}>Exim Blogs</Link>
+                         <Link to={"/blogs"}>Exim Blogs</Link>
                       </div>
                       <div  className="blog__box_social">
                          <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
