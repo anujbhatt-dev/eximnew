@@ -12,7 +12,7 @@ class App extends React.Component {
 
     ReactGa.initialize('UA-185613548-1');
     ReactGa.pageview(window.location.pathname + window.location.search);
-  
+
   }
 
 
