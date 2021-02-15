@@ -15,9 +15,16 @@ import Aos from "aos"
 
     componentDidMount=()=>{
 
-        if(!this.props.location.state)
-        this.props.history.push("/blogs");
-       this.setState({blog:this.props.location.state});
+        if(!this.props.location.state){
+        // this.props.history.push("/blogs");
+       let blog= this.props.getBlog(this.props.match.params.id);
+       if(blog===null)
+       this.props.history.push("/blogs");
+       else
+       this.setState({blog:blog});
+    }
+        else
+          this.setState({blog:this.props.location.state});
 
        window.scrollTo({top:0,behavior:"smooth"});
       Aos.init({

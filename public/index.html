@@ -499,7 +499,7 @@
         document.querySelector('meta[name="description"]').setAttribute("content", "Know the latest and revised Import Export Course Fees in Mumbai, India. For more details, inquire today at EXIM EDUCATION. ");
         document.querySelector('meta[name="url"]').setAttribute("content", "https://eximeducation.com/pricing");
 
-      } else if (pathname === '/blogs/main')
+      } else if (pathname.indexOf('blog')!==-1)
         document.getElementById("seo").innerHTML = blogs;
       else if (pathname === '/about')
         document.getElementById("seo").innerHTML = about;
