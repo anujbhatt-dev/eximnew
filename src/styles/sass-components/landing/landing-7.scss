@@ -1,9 +1,52 @@
+.video__wrapper{
+  position: relative;
+  width: 100vw;
+  height: 75vh;
+  left: -12rem;
+  overflow: hidden;
+  @include respond(tab-land){
+     left: 0rem;
+     height:50vh;
+  };
+}
+
+
 .landing__7{
   margin-bottom: 16rem;
-  & > a >  img{
-    width: 100vw;
-    position: relative;
-    left: -12rem;
+  @include respond(tab-land){
+     margin-bottom: 1rem;
+  };
+  &_img{
+    position: absolute;
+    width: 100%;
+    // height: 95vh;
+    top: 0;
+    left: 0;
+    @include respond(tab-land){
+       display: none;
+    };
+  }
+  &_video{
+    position: absolute;
+    top:7rem;
+    left: 5rem;
+    // width: 50rem;
+    height: 33rem;
+    border-radius: 35px;
+    // height: 80vh;
+    // position: relative;
+    margin-top: 5rem;
+    // left: -12rem;
+    z-index: 1000;
+    outline: none;
+    border: none;
+    @include respond(tab-land){
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: auto;
+       border-radius: 0px;
+    };
   }
   &_colab{
     // width: 100vw;
@@ -32,10 +75,3 @@
     }
   }
 }
-@include respond(tab-land){
-  .landing__7{
-    & > a > img{
-      left: -2rem;
-    }
-  }
-};

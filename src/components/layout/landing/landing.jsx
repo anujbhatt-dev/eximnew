@@ -65,6 +65,8 @@ import cancel from "../../../assets/images/cancel.png";
 import emailjs from 'emailjs-com';
 
 
+import photo from "../../../assets/videos/photo.mp4"
+
 import FlipNumbers from 'react-flip-numbers';
 
 
@@ -300,12 +302,12 @@ import indiaPort from "../../../assets/images/indiaPort.png"
 
       return (
           <div className="landing">
-                <Helmet>
+                {/* <Helmet>
                     <meta charSet="utf-8" />
                     <title>Export & Import Course in Mumbai | Exim Courses Online: EXIM EDUCATION</title>
                     <link rel="canonical" href={this.props.url} />
                     <meta name="description" content="Enroll today for Exim course/ Export Import course in Mumbai to take your career a step ahead. Online training facility is also available for import and export courses. Call now!"/>
-                </Helmet>
+                </Helmet> */}
 
                {
                  // screen 1
@@ -326,7 +328,7 @@ import indiaPort from "../../../assets/images/indiaPort.png"
                     </div>
 
                     <div className="landing__1_text-btns">
-                        <Link  to="/pricing" className="landing__1_text-btns--join">Start Today <span> 0</span> <img src={arrow} alt=""/></Link>
+                        <a  href="#starttoday" className="landing__1_text-btns--join">Start Today <span> 0</span> <img src={arrow} alt=""/></a>
                         {
                           // <button className="landing__1_text-btns--trial">Trail</button>
                         }
@@ -378,7 +380,7 @@ import indiaPort from "../../../assets/images/indiaPort.png"
                 // 3
               }
 
-              <div className="landing__3">
+              <div id="starttoday" className="landing__3">
                   <h1 className="heading-primary landing__3_heading">export & import course details</h1>
                   <div className="landing__3_box">
                       <div className="landing__3_box-text">
@@ -463,7 +465,7 @@ import indiaPort from "../../../assets/images/indiaPort.png"
                       <div  className="landing__4_2-text">
                            <div className="landing__4_2-text--big heading-primary">Not You & I but We be on the journey full of support and growth.
 </div>
-                    
+
                            <div className="landing__4_2-text--smaller">Your keenness to learn more and get hands in the international market can be done right by
 smooth payment procedure. Quick pay and get the grip to course, live lectures, research and
 get ready for growing stability </div>
@@ -541,7 +543,12 @@ crossing national borders.</div>
                           <img src={indiaPort} alt=""/>
                       </div>
                   </div>
-                  <a href="" target="_blank" rel="noreferrer"><img className="landing__7_img" src={videoAfterColab} alt=""/></a>
+                  <div className="video__wrapper">
+                      <video className="landing__7_video"  controls>
+                        <source src={photo} type="video/mp4"/>
+                      </video>
+                      <img className="landing__7_img" src={videoAfterColab} alt=""/>
+                  </div>
               </div>
 
               {

@@ -219,7 +219,7 @@ import {Helmet} from "react-helmet"
                      <div className="about__3_row-box">
                         <h2 className="about__3_row-box--head">Sagar & Anuj</h2>
                         <ul>
-                           <li>Website developer and a beautiful guitarist</li>
+                           <li>Web developers</li>
                         </ul>
                      </div>
 
