@@ -55,10 +55,9 @@ export default class BloggerBlogs extends Component {
                 {
                   return( <div className="mainBlogs__2_flex-box">
                <Link className="link" to={{pathname:"/blog/"+blog.blog.id+"/post/"+blog.id, state:blog}} >go...</Link>
-                   <img src={m} alt=""/>
+                   <img src={blog.labels[0]} alt=""/>
                         <div className="mainBlogs__2_flex-box--title">{blog.title}</div>
                         <div className="mainBlogs__2_flex-box--content">
-                        <td dangerouslySetInnerHTML={{__html:(blog.content.substring(170,400))}}  />...
                         </div>
                         <div className="mainBlogs__2_flex-box--date">{blog.date}</div>
                         <div className="mainBlogs__3_slide-box--date">{blog.published.substring(0,blog.published.indexOf("T"))}</div>

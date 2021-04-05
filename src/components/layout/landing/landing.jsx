@@ -85,6 +85,7 @@ import dgft from "../../../assets/images/dgft.jpg"
 import mik from "../../../assets/images/mik.png"
 import fieo from "../../../assets/images/fieo.svg"
 import indiaPort from "../../../assets/images/indiaPort.png"
+import fire from "../firebase_config"
 
   class Landing extends Component{
 
@@ -92,11 +93,13 @@ import indiaPort from "../../../assets/images/indiaPort.png"
 
         eportValue:6456744,
         numbersVisible:false,
-        webinarDay:"sunday",
-        webinarDate:"24th January, 2021",
-        webinarTime:"12:30 PM",
-        webinarMentor:"Zehan Shah",
-        webinarTopic:"Advance technology and government new laws applied in 2020 module ",
+        webinarSubmitted:false,
+       webinar:{ day:"sunday",
+        date:"24th January, 2021",
+        time:"12:30 PM",
+        mentor:"Zehan Shah",
+        topic:"Advance technology and government new laws applied in 2020 module ",
+      },
         value:"",
         mob:false,
         detail:false,
@@ -192,6 +195,25 @@ import indiaPort from "../../../assets/images/indiaPort.png"
 
     componentDidMount=()=>{
 
+
+      // getting webinar details
+
+      const todoRef = fire.database().ref('/webinar')
+      todoRef.on('value', (snapshot) => {
+          const todos = snapshot.val();
+          const webinar = [];
+          for (let id in todos) {
+              webinar.push({ id, ...todos[id] });
+          }
+          this.setState({webinar:{...webinar[0]}});
+        });
+
+
+
+
+
+
+
       window.scrollTo({top:0,behavior:"smooth"});
 
         this.repeat();
@@ -274,21 +296,24 @@ import indiaPort from "../../../assets/images/indiaPort.png"
 
    webinarDetailSubmit=(e)=>{
 
-     e.preventDefault();
-     this.setState({
+    this.setState({
+      webinarSubmitted:true,
       submitted:4,
-    });
+    })
+    
 
+     e.preventDefault();
+  
 
-    let data={... e.target};
-    data["topic"]=this.state.webinarTopic;
-    data["date"]=this.state.webinarDate;
-    data["day"]=this.state.webinarDay;
-    data["mentor"]=this.state.webinarMentor;
-    data["time"]=this.state.webinarTime;
+    // let data={... e.target};
+    // data["topic"]=this.state.topic;
+    // data["date"]=this.state.date;
+    // data["day"]=this.state.day;
+    // data["mentor"]=this.state.mentor;
+    // data["time"]=this.state.time;
 
     let template="template_jxzqedp";
-    this.setState({detail:false,name:"",email:""});
+    this.setState({detail:false});
 
     emailjs.sendForm('service_9wrddem', template,e.target, 'user_3C6n5XsLh20WgqpTa3412').
       then(res=>{
@@ -296,6 +321,7 @@ import indiaPort from "../../../assets/images/indiaPort.png"
   })
 
    }
+
 
    
 
@@ -654,38 +680,40 @@ crossing national borders.</div>
                     <div>
                       next<br/>
                       <span>WEBINAR</span><br/>
-                      {this.state.webinarDay}
+                      {this.state.webinar.day}
                     </div>
                     <a style={{zindex:"3"}} href={this.state.webinarLink}  onClick={this.detailHandler} target="_blank" rel="noreferrer" style={{width:"26rem"}} className="landing__1_text-btns--join landing__3_box-btn"><span> 0</span> <img src={arrow} alt=""/></a>
                  </div>
                   <div className="landing__10_text_1">
                      <h2>Topic</h2>
-                     <div>{this.state.webinarTopic}</div>
-            <h4>{this.state.webinarMentor}</h4>
+                     <div>{this.state.webinar.topic}</div>
+            <h4>{this.state.webinar.mentor}</h4>
                   </div>
                   <div className="landing__10_text_2">
                       <h5>date</h5>
-            <h3>{this.state.webinarDate}</h3>
+            <h3>{this.state.webinar.date}</h3>
                   </div>
                   <div className="landing__10_text_3">
                       <h5>time</h5>
-                      <h3>{this.state.webinarTime}</h3>
+                      <h3>{this.state.webinar.time}</h3>
                   </div>
                   <div className="landing__10_text_4">
                       <h5>mentor</h5>
-                      <h3>{this.state.webinarMentor}</h3>
+                      <h3>{this.state.webinar.mentor}</h3>
                   </div>
                   <form onSubmit={this.webinarDetailSubmit} style={this.state.detail?{display:"flex"}:{display:"none"}} className="landing__10_webinar">
                      <p>Register Yourself.</p>
                      <img onClick={this.detailHandler} src={cancel} alt=""/>
-                     <input type="text" hidden name="mentor" value={this.state.webinarMentor}/>
-                     <input type="text" hidden name="date" value={this.state.webinarDate}/>
-                     <input type="text" hidden name="day" value={this.state.webinarDay}/>
-                     <input type="text" hidden name="time" value={this.state.webinarTime}/>
-                     <input type="text" hidden name="topic" value={this.state.webinarTopic}/>
+                     <input type="text" hidden name="mentor" value={this.state.webinar.mentor}/>
+                     <input type="text" hidden name="date" value={this.state.webinar.date}/>
+                     <input type="text" hidden name="day" value={this.state.webinar.day}/>
+                     <input type="text" hidden name="time" value={this.state.webinar.time}/>
+                     <input type="text" hidden name="topic" value={this.state.webinar.topic}/>
                      <input required placeholder="name" className="landing__10_webinar-name"  name="name"  value={this.state.name} onChange={(e)=>this.onChangeHandler(e)} type="text"/>
                      <input required placeholder="email" className="landing__10_webinar-email" name="email" value={this.state.email} onChange={(e)=>this.onChangeHandler(e)}  type="email"/>
-                     <input  className="landing__10_webinar-submit" type="submit" value="submit"/>
+                     <input required placeholder="phone" className="landing__10_webinar-name"  name="phone"  value={this.state.phone} onChange={(e)=>this.onChangeHandler(e)} type="number"/>
+                     
+                     <input  className="landing__10_webinar-submit" style={{backgroundColor:this.state.webinarSubmitted?"green":null}} type="submit" disabled={this.state.webinarSubmitted} value={this.state.webinarSubmitted?"submited":"submit"}/>
                   </form>
                  {this.state.mob?<img  className="landing__10_orbits" src={orbitss} alt=""/>:<img className="landing__10_orbits" src={orbits} alt=""/>}
                  {this.state.mob?<img className="landing__10_play" src={whitever} alt=""/>:<img className="landing__10_play" src={whitever} alt=""/>}

@@ -14,6 +14,8 @@ import BlogManual from "./blogs_manual/blog_manual/blog_manual"
 import axios from "axios"
 import BloggerBlogs from "./blogger/blogger-blogs"
 import BloggerBlog from "./blogger/blogger-blog"
+import WebinarConfig from "./webinar_config"
+import AdminLogin from "./admin_login"
 
 class Layout extends Component{
 
@@ -33,7 +35,7 @@ class Layout extends Component{
 }
 
 componentDidMount=()=>{
-  axios.get(this.UDATES_BLOGGER_POSTS_API)
+  axios.get(this.UDATES_BLOGGER_POSTS_API) 
   .then(res =>
       this.setState({ blogs: [...res.data.items] })
   )
@@ -52,9 +54,18 @@ componentDidMount=()=>{
 
     return (
           <div className="layout">
+               
+               <Switch>
+              
+              <Route exact  path="/admin">
+              <Navigation/>
+                  <AdminLogin  url={this.state.url}/>
+              </Route>
+               
+
+               <Route>
                <Navigation/>
                <GoToTop/>
-               <Switch>
                <Route exact  path="/">
                  <Landing page="HOME" url={this.state.url}/>
                </Route>
@@ -76,8 +87,12 @@ componentDidMount=()=>{
               <Route exact  path="/courses">
                   <Course page="COURSES"  url={this.state.url}/>
               </Route>
+              </Route>
+
+              <Footer/>
+               
                </Switch>
-               <Footer/>
+               
           </div>
     )
   }
