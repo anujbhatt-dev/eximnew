@@ -1,0 +1,88 @@
+.otherCourse1{
+  &__lastImg{
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -15rem;
+    @include respond(tab-port){
+        height: 50vh;
+        margin-bottom:-5rem;
+    }
+    &-blur{
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      height: 15rem;
+      // z-index: 5;
+      background-image: linear-gradient(to top,rgba($color-white,1) 30% ,transparent 100%);
+      color: transparent;
+      @include respond(tab-port){
+          display: none;
+      }
+    }
+    & > img{
+        // height:  200%;
+        width: 80%;
+        object-position: top;
+        object-fit: cover;
+        @include respond(tab-port){
+          width: 100%;
+          height: 39vh;
+          object-position: left;
+        }
+    }
+    & a{
+      @include respond(tab-port){
+        height: 5rem;
+
+      }
+      & img{
+        height: 100%;
+      }
+
+    }
+    &-btn{
+      position:absolute;
+      left: 32%;
+      object-fit: cover;
+      transition: all .2s;
+      &:hover{
+        box-shadow: 0 5px 1rem rgba($color-grey,.4);
+        transform: translateY(-3px);
+      }
+      @include respond(tab-port){
+        transform: translateX(-50%);
+
+      }
+    }
+    &-apple{
+      top: 35%;
+      @include respond(tab-port){
+          left: 30%;
+          top: 80%;
+      }
+    }
+    &-play{
+      top: 50%;
+      @include respond(tab-port){
+          left: 69%;
+          top: 80%;
+      }
+    }
+  }
+  &__whyJoin{
+    width: 100%;
+  }
+  &__Wrapper{
+    width: 100vw;
+    position:relative;
+    & img{
+      width: 100vw;
+      margin-left: -12rem;
+
+    }
+  }
+}

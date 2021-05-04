@@ -4,6 +4,7 @@ import Landing from "./landing/landing"
 import Pricing from "./pricing/pricing"
 import AboutUs from "./aboutUs/aboutUs"
 import Course from "./course/course"
+import OtherCourse1 from "./course/othercourse1/othercourse1"
 import Footer from "./footer/footer"
 import GoToTop from "./goToTop/goToTop"
 import { Switch, Route } from "react-router-dom";
@@ -35,7 +36,7 @@ class Layout extends Component{
 }
 
 componentDidMount=()=>{
-  axios.get(this.UDATES_BLOGGER_POSTS_API) 
+  axios.get(this.UDATES_BLOGGER_POSTS_API)
   .then(res =>
       this.setState({ blogs: [...res.data.items] })
   )
@@ -44,7 +45,7 @@ componentDidMount=()=>{
 
 
   getBlog=(id)=>{
-  
+
     let index=this.state.blogs.findIndex(blog=>blog.id===+id);
     return index===-1?null:this.state.blogs[index];
 
@@ -54,14 +55,14 @@ componentDidMount=()=>{
 
     return (
           <div className="layout">
-               
+
                <Switch>
-              
+
               <Route exact  path="/admin">
               <Navigation/>
                   <AdminLogin  url={this.state.url}/>
               </Route>
-               
+
 
                <Route>
                <Navigation/>
@@ -87,12 +88,15 @@ componentDidMount=()=>{
               <Route exact  path="/courses">
                   <Course page="COURSES"  url={this.state.url}/>
               </Route>
+              <Route exact  path="/courses/otherCourse1">
+                  <OtherCourse1 page="COURSES"  url={this.state.url}/>
+              </Route>
               </Route>
 
-              <Footer/>
-               
+
                </Switch>
-               
+               <Footer/>
+
           </div>
     )
   }

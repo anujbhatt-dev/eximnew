@@ -1,0 +1,22 @@
+<svg id="Group_1380" data-name="Group 1380" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="196.132" height="66.734" viewBox="0 0 196.132 66.734">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_5139" data-name="Path 5139" d="M516.26,827.358l19.514,11.337a2.332,2.332,0,0,1-.015,4.041l-19.525,11.157-19.545,11.169a2.333,2.333,0,0,1-3.489-2.027l.021-22.512.022-22.487a2.332,2.332,0,0,1,3.5-2.015Z" transform="translate(-493.199 -815.701)" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="Rectangle_609" data-name="Rectangle 609" width="196.132" height="66.734" rx="18" transform="translate(0)"/>
+  <g id="Group_1378" data-name="Group 1378" transform="translate(20.1 8.423)">
+    <g id="Group_1377" data-name="Group 1377" clip-path="url(#clip-path)">
+      <g id="Group_1376" data-name="Group 1376" transform="translate(-0.146 -1.252)">
+        <path id="Path_5135" data-name="Path 5135" d="M524.784,843.477l-29.382,17,22.823-23.96Z" transform="translate(-492.504 -809.261)" fill="#fc3844"/>
+        <path id="Path_5136" data-name="Path 5136" d="M525.1,832.735l-6.846,7.2-22.986-24.372Z" transform="translate(-492.537 -814.484)" fill="#00ef77"/>
+        <path id="Path_5137" data-name="Path 5137" d="M517.942,841.044l-24.809,26.046-.05-52.392Z" transform="translate(-493.083 -814.699)" fill="#00cfff"/>
+        <g id="Group_1375" data-name="Group 1375" transform="translate(26.583 18.901)">
+          <path id="Path_5138" data-name="Path 5138" d="M534.025,837.062l-12.867,7.433-6.8-7.208,7.1-7.458Z" transform="translate(-514.362 -829.829)" fill="#ffd701"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <text id="Get_in_on" data-name="Get in on" transform="translate(72.132 24.431)" fill="#fff" font-size="9" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Get in on</tspan></text>
+  <text id="Google_Play" data-name="Google Play" transform="translate(70.226 44.565)" fill="#fff" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Google Play</tspan></text>
+</svg>

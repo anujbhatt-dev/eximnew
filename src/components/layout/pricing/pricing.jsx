@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import tick from "../../../assets/images/tick.svg";
+import ac1 from "../../../assets/images/ac1.svg";
+import ac2 from "../../../assets/images/ac2.svg";
+import ac3 from "../../../assets/images/ac3.svg";
 import send from "../../../assets/images/send2.svg";
 import circleTimes from "../../../assets/images/circle-times.svg";
 import circleDownArrow from "../../../assets/images/circle-downArrow.svg";
@@ -7,9 +10,44 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import pr from "../../../assets/images/planeRoute.svg";
+import filledArrow from "../../../assets/images/filledArrow.svg";
+import arrow1 from "../../../assets/images/arrow.svg";
 
 class Pricing extends Component {
   state = {
+    courses:[
+      {
+        title:"Parties and places involved in import/ export",
+        lessons:"140 mins",
+        locked:false
+      },
+      {
+        title:"Types of Transportation, Container and packaging",
+        lessons:"80 mins",
+        locked:true
+      },
+      {
+        title:"Basic Registration for Exim",
+        lessons:"110 mins",
+        locked:true
+      },
+      {
+        title:"Export Incentives",
+        lessons:"30 mins",
+        locked:true
+      },
+      {
+        title:"Incoterms",
+        lessons:"10 mins",
+        locked:true
+      },
+      {
+        title:"Basic Terms",
+        lessons:"60 mins",
+        locked:true
+      }
+    ],
     faq: [
       {
         ques: "What are the advantages of taking export import classes online?",
@@ -73,7 +111,7 @@ class Pricing extends Component {
           // head
         }
         <h1 className="heading-primary landing__3_heading">
-          import export course fees / FLEXIBLE plans
+            Investment
         </h1>
         <h4>
           Choose a plan that works best for you
@@ -263,6 +301,84 @@ class Pricing extends Component {
           </div>
         </div>
         <div className="customHr">...</div>
+
+        {
+          //course
+        }
+
+        <div className="pricing__course">
+            <h1 className="heading-primary landing__3_heading">course details</h1>
+            <div className="course__div">
+                <img className="course__div_route" src={pr} alt=""/>
+                <div id="pricing__course" className="course__wrapper">
+                    {
+                      this.state.courses.map((course,i)=>{
+                        return <div  className={"course__wrapper_box "+"course__wrapper_box-"+(i+1)}>
+
+                                   <div  className="course__wrapper_box-count">{i===5?"4":i===3?"6":i+1}</div>
+                                   <div  className="course__wrapper_box-title">
+                                       {course.title}
+                                   </div>
+                                   <div className="course__wrapper_box-lock">
+                                        <div>{course.lessons}</div>
+                                   </div>
+                                </div>
+                      })
+                    }
+                 </div>
+             </div>
+        </div>
+        <div className="pricing__back">
+          <Link className="pricing__course_btn" to="/courses"><span>View Details</span><img src={filledArrow} alt=""/></Link>
+        </div>
+
+        {
+          // advance courses
+        }
+
+        <div className="pricing__adv">
+           <h1 className="heading-primary landing__3_heading">Advance course</h1>
+           <p className="pricing__adv_subH">Choose a plan that works best for you
+           <br/>or your team</p>
+           <div className="pricing__adv_flex">
+               <div className="pricing__adv_flex-item">
+                  <img src={ac1} alt=""/>
+                  <div className="pricing__adv_flex-item-title">
+                      <div>
+                          Regulation On
+                          <br/>Transport Of
+                          <br/>Dangerous Goods
+                          <br/>By Sea IMDG Code
+                      </div>
+                      <Link className="pricing__adv_flex-item-btn" to="/courses"><span>Details</span> <img src={arrow1} alt=""/></Link>
+                  </div>
+               </div>
+               <div className="pricing__adv_flex-item">
+                  <img src={ac2} alt=""/>
+                  <div className="pricing__adv_flex-item-title">
+                      <div>
+                          Regulation On
+                          <br/>Transport Of
+                          <br/>Dangerous Goods
+                          <br/>By Sea IMDG Code.
+                      </div>
+                      <Link className="pricing__adv_flex-item-btn" to="/courses"><span>Details</span> <img src={arrow1} alt=""/></Link>
+                  </div>
+               </div>
+               <div className="pricing__adv_flex-item">
+                  <img src={ac3} alt=""/>
+                  <div className="pricing__adv_flex-item-title">
+                      <div>
+                          Regulation On
+                          <br/>Transport Of
+                          <br/>Dangerous Goods
+                          <br/>By Sea IMDG Code
+                      </div>
+                      <Link className="pricing__adv_flex-item-btn" to="/courses"><span>Details</span> <img src={arrow1} alt=""/></Link>
+                  </div>
+               </div>
+           </div>
+        </div>
 
         {
           // faq

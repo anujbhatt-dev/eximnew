@@ -1,0 +1,29 @@
+.landing__city{
+   height: 100vh;
+   width: 100vw;
+   position: relative;
+   margin-left: -12rem;
+   @include respond(tab-port){
+     height: 30vh;
+     margin-left: -1rem;
+   }
+   & img{
+     height: 100%;
+     width: 100vw;
+     object-fit: cover;object-position: bottom;
+   }
+   &_msg{
+     position: absolute;
+     top: 20%;
+     left: 50%;
+     transform: translateX(-50%);
+     z-index: 100;
+     color: $color-white;
+     font-size: 2.5rem;
+     font-weight: bold;
+     @include respond(tab-port){
+        font-size: 1.5rem;
+        top: 15%; 
+     }
+   }
+}

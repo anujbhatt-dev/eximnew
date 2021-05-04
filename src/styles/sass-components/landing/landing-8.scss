@@ -48,7 +48,9 @@
     align-items: center;
     &-images{
       position: relative;
-
+      @include respond(tab-port){
+        display: none;
+      }
       & > img{
 
       }
@@ -91,6 +93,9 @@
       max-width: 50rem;
       padding: 5rem;
       background: $color-white;
+      @include respond(tab-port){
+        padding: 2rem;
+      }
       &--big{
         font-size: 1.8rem;
         color: $color-exim-dark-grey;

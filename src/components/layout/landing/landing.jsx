@@ -5,6 +5,9 @@ import {Helmet} from "react-helmet"
 import Aos from "aos"
 import "aos/dist/aos.css"
 import $ from "jquery"
+import city from "../../../assets/images/city.svg"
+import live from "../../../assets/images/live.svg"
+import demo from "../../../assets/images/demo.svg"
 import book from "../../../assets/images/book.svg";
 import laptop from "../../../assets/images/laptop.svg";
 import reload from "../../../assets/images/reload.svg";
@@ -252,7 +255,8 @@ import fire from "../firebase_config"
     });
 
      $(window).scroll(()=>{
-       if($(window).scrollTop()>=1700 ){
+       // console.log($(window).scrollTop());
+       if($(window).scrollTop()>=4000 ){
          $(".blank__1").css({"animation":"slides 1s linear","animation-fill-mode":"forward"});
          setTimeout(()=>{
            $(".blank__1").css({"opacity":"0"})
@@ -267,7 +271,7 @@ import fire from "../firebase_config"
          },1000)
        }
 
-       if($(window).scrollTop()>=3761){
+       if($(window).scrollTop()>=6200){
          $(".landing__6_box-certificate").css({"animation":"scale .6s linear 2","animation-fill-mode":"forward"});
        }
 
@@ -300,10 +304,10 @@ import fire from "../firebase_config"
       webinarSubmitted:true,
       submitted:4,
     })
-    
+
 
      e.preventDefault();
-  
+
 
     // let data={... e.target};
     // data["topic"]=this.state.topic;
@@ -323,7 +327,7 @@ import fire from "../firebase_config"
    }
 
 
-   
+
 
 
     render(){
@@ -405,6 +409,15 @@ import fire from "../firebase_config"
               <div className="customHr">...</div>
 
               {
+                //city promotion
+              }
+
+              <div className="landing__city">
+                  <div className="landing__city_msg">Serving at Your City</div>
+                  <img src={city} alt="city"/>
+              </div>
+
+              {
                 // 3
               }
 
@@ -471,8 +484,83 @@ import fire from "../firebase_config"
               </div>
 
               {
+                // next batch details
+              }
+
+               <div className="landing__nextBD">
+                    <div className="landing__nextBD_head">
+                    NEXT BATCH
+                    <img src={live} alt=""/>
+                    </div>
+                    <div className="landing__nextBD_date">10 MAY, 2021</div>
+                    <Link to="/courses" className="landing__nextBD_btn">
+                    <span>Join Today</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="81.992" height="14.514" viewBox="0 0 81.992 14.514">
+                            <path id="Icon_awesome-long-arrow-alt-right" data-name="Icon awesome-long-arrow-alt-right" d="M17.188,14.879H-55.177a.791.791,0,0,0-.791.791v3.691a.791.791,0,0,0,.791.791H17.188v3.036a1.582,1.582,0,0,0,2.7,1.119l5.672-5.672a1.582,1.582,0,0,0,0-2.237l-5.672-5.672a1.582,1.582,0,0,0-2.7,1.119Z" transform="translate(55.968 -10.258)" fill="#0062ff"/>
+                    </svg>
+                    </Link>
+               </div>
+
+
+               {
+                 // video 2
+                 // <img className="landing__10_img" src={video2} alt=""/>
+               }
+
+               <div className="landing__10">
+                  <div className="landing__10_text">
+                     <div className="landing__10_text-flex">
+                       <p>next</p>
+                       <span>WEBINAR <img src={demo} alt=""/></span><br/>
+                       <p>{this.state.webinar.day}</p>
+                     </div>
+                     <div  className="landing__10_text-flex">
+                         <a style={{zindex:"3"}} href={this.state.webinarLink}  onClick={this.detailHandler} target="_blank" rel="noreferrer" style={{width:"26rem"}}  className="landing__10_text-flex--btn">Register</a>
+                         <a style={{zindex:"3"}} href={this.state.webinarLink}  onClick={this.detailHandler} target="_blank" rel="noreferrer" style={{width:"26rem"}}  className="landing__10_text-flex--btn landing__10_text-flex--btnRev ">View Webinar</a>
+                     </div>
+                  </div>
+                   <div className="landing__10_text_1">
+                      <h4  style={{color:"white"}}>{this.state.webinar.mentor}</h4>
+                      <div>{this.state.webinar.topic}</div>
+                   </div>
+                   <div className="landing__10_text_2">
+                       <h5>date</h5>
+                       <h3>{this.state.webinar.date}</h3>
+                   </div>
+                   <div className="landing__10_text_3">
+                       <h5>time</h5>
+                       <h3>{this.state.webinar.time}</h3>
+                   </div>
+                   <div className="landing__10_text_4">
+                       <h5>mentor</h5>
+                       <h3>{this.state.webinar.mentor}</h3>
+                   </div>
+                   <div className="landing__10_text_5">
+                       <h5>call us</h5>
+                       <h3><a href="tel://+918517885555" style={{color:"white"}}>+91  8517885555</a></h3>
+                   </div>
+                   <form onSubmit={this.webinarDetailSubmit} style={this.state.detail?{display:"flex"}:{display:"none"}} className="landing__10_webinar">
+                      <p>Register Yourself.</p>
+                      <img onClick={this.detailHandler} src={cancel} alt=""/>
+                      <input type="text" hidden name="mentor" value={this.state.webinar.mentor}/>
+                      <input type="text" hidden name="date" value={this.state.webinar.date}/>
+                      <input type="text" hidden name="day" value={this.state.webinar.day}/>
+                      <input type="text" hidden name="time" value={this.state.webinar.time}/>
+                      <input type="text" hidden name="topic" value={this.state.webinar.topic}/>
+                      <input required placeholder="name" className="landing__10_webinar-name"  name="name"  value={this.state.name} onChange={(e)=>this.onChangeHandler(e)} type="text"/>
+                      <input required placeholder="email" className="landing__10_webinar-email" name="email" value={this.state.email} onChange={(e)=>this.onChangeHandler(e)}  type="email"/>
+                      <input required placeholder="phone" className="landing__10_webinar-name"  name="phone"  value={this.state.phone} onChange={(e)=>this.onChangeHandler(e)} type="number"/>
+
+                      <input  className="landing__10_webinar-submit" style={{backgroundColor:this.state.webinarSubmitted?"green":null}} type="submit" disabled={this.state.webinarSubmitted} value={this.state.webinarSubmitted?"submited":"submit"}/>
+                   </form>
+                  {this.state.mob?<img  className="landing__10_orbits" src={orbitss} alt=""/>:<img className="landing__10_orbits" src={orbits} alt=""/>}
+               </div>
+
+              {
                 // s
               }
+
+
 
               <div className="landing__4">
                   {this.state.mob?<img className="landing__4_background" src={sMob} alt=""/>:<img  className="landing__4_background" src={s} alt=""/>}
@@ -495,8 +583,9 @@ import fire from "../firebase_config"
 </div>
 
                            <div className="landing__4_2-text--smaller">Your keenness to learn more and get hands in the international market can be done right by
-smooth payment procedure. Quick pay and get the grip to course, live lectures, research and
-get ready for growing stability </div>
+                              smooth payment procedure. Quick pay and get the grip to course, live lectures, research and
+                              get ready for growing stability
+                           </div>
                       </div>
                   </div>
 
@@ -669,56 +758,6 @@ crossing national borders.</div>
                         </div>
                    </div>
               </div>
-
-              {
-                // video 2
-              }
-
-              <div className="landing__10">
-                 <img className="landing__10_img" src={video2} alt=""/>
-                 <div className="landing__10_text">
-                    <div>
-                      next<br/>
-                      <span>WEBINAR</span><br/>
-                      {this.state.webinar.day}
-                    </div>
-                    <a style={{zindex:"3"}} href={this.state.webinarLink}  onClick={this.detailHandler} target="_blank" rel="noreferrer" style={{width:"26rem"}} className="landing__1_text-btns--join landing__3_box-btn"><span> 0</span> <img src={arrow} alt=""/></a>
-                 </div>
-                  <div className="landing__10_text_1">
-                     <h2>Topic</h2>
-                     <div>{this.state.webinar.topic}</div>
-            <h4>{this.state.webinar.mentor}</h4>
-                  </div>
-                  <div className="landing__10_text_2">
-                      <h5>date</h5>
-            <h3>{this.state.webinar.date}</h3>
-                  </div>
-                  <div className="landing__10_text_3">
-                      <h5>time</h5>
-                      <h3>{this.state.webinar.time}</h3>
-                  </div>
-                  <div className="landing__10_text_4">
-                      <h5>mentor</h5>
-                      <h3>{this.state.webinar.mentor}</h3>
-                  </div>
-                  <form onSubmit={this.webinarDetailSubmit} style={this.state.detail?{display:"flex"}:{display:"none"}} className="landing__10_webinar">
-                     <p>Register Yourself.</p>
-                     <img onClick={this.detailHandler} src={cancel} alt=""/>
-                     <input type="text" hidden name="mentor" value={this.state.webinar.mentor}/>
-                     <input type="text" hidden name="date" value={this.state.webinar.date}/>
-                     <input type="text" hidden name="day" value={this.state.webinar.day}/>
-                     <input type="text" hidden name="time" value={this.state.webinar.time}/>
-                     <input type="text" hidden name="topic" value={this.state.webinar.topic}/>
-                     <input required placeholder="name" className="landing__10_webinar-name"  name="name"  value={this.state.name} onChange={(e)=>this.onChangeHandler(e)} type="text"/>
-                     <input required placeholder="email" className="landing__10_webinar-email" name="email" value={this.state.email} onChange={(e)=>this.onChangeHandler(e)}  type="email"/>
-                     <input required placeholder="phone" className="landing__10_webinar-name"  name="phone"  value={this.state.phone} onChange={(e)=>this.onChangeHandler(e)} type="number"/>
-                     
-                     <input  className="landing__10_webinar-submit" style={{backgroundColor:this.state.webinarSubmitted?"green":null}} type="submit" disabled={this.state.webinarSubmitted} value={this.state.webinarSubmitted?"submited":"submit"}/>
-                  </form>
-                 {this.state.mob?<img  className="landing__10_orbits" src={orbitss} alt=""/>:<img className="landing__10_orbits" src={orbits} alt=""/>}
-                 {this.state.mob?<img className="landing__10_play" src={whitever} alt=""/>:<img className="landing__10_play" src={whitever} alt=""/>}
-              </div>
-
 
               {
                 // review

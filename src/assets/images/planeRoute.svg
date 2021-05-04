@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="919.144" height="581.671" viewBox="0 0 919.144 581.671">
+  <g id="Group_1449" data-name="Group 1449" transform="translate(-130.189 -98.536)">
+    <path id="Path_4966" data-name="Path 4966" d="M514.755,351.829C551.59,273.17,647.133,227.111,731.614,247.287c75.2,17.96,131.889,78.9,201.244,113.079,44.171,21.766,92.845,32.339,140.764,43.679,64.693,15.309,130.7,32.483,196.776,25.155s133.472-45.271,154.687-108.275c4.649-13.8,6.931-28.926,2.93-42.932s-15.331-26.532-29.724-28.778c-8.836-1.379-17.888,1.123-25.932,5.034-41.906,20.376-56.1,73.472-55.564,120.067.549,47.98,11.568,95.123,19.778,142.4s13.6,96.161,2.982,142.957-39.753,91.636-84,110.2c-50.363,21.131-108.9,4.729-156.859-21.407s-90.808-61.742-141.287-82.6c-45.519-18.8-95.149-24.744-144.061-30.5-76.83-9.044-157.039-17.727-229.636,9" transform="translate(-382.755 -116.551)" fill="none" stroke="#ffb4b4" stroke-miterlimit="10" stroke-width="4"/>
+    <g id="Group_1303" data-name="Group 1303" transform="translate(-113 -96)">
+      <g id="Icon_material-airplanemode-active" data-name="Icon material-airplanemode-active" transform="translate(413.352 190.861) rotate(75)">
+        <path id="Path_4967" data-name="Path 4967" d="M15.27,13.5" transform="translate(8.679 7.427)" fill="#0062ff"/>
+        <path id="Path_4968" data-name="Path 4968" d="M51.66,38.854V33.732L31.171,20.927V6.842a3.842,3.842,0,1,0-7.683,0V20.927L3,33.732v5.122l20.488-6.4V46.537l-5.122,3.842v3.842L27.33,51.66l8.964,2.561V50.379l-5.122-3.842V32.452Z" transform="translate(0 0)" fill="#0062ff"/>
+      </g>
+      <g id="Icon_material-airplanemode-active-2" data-name="Icon material-airplanemode-active" transform="translate(896.686 383.294) rotate(101)">
+        <path id="Path_4967-2" data-name="Path 4967" d="M15.27,13.5" transform="translate(2.064 1.767)" fill="#0062ff"/>
+        <path id="Path_4968-2" data-name="Path 4968" d="M36.3,27.533v-3.5L22.276,15.267V5.629a2.629,2.629,0,1,0-5.257,0v9.638L3,24.028v3.5l14.019-4.381V32.79l-3.5,2.629v2.629L19.648,36.3l6.133,1.752V35.419l-3.5-2.629V23.152Z" fill="#0062ff"/>
+      </g>
+      <g id="Icon_material-airplanemode-active-3" data-name="Icon material-airplanemode-active" transform="matrix(0.052, -0.999, 0.999, 0.052, 905.266, 777.211)">
+        <path id="Path_4967-3" data-name="Path 4967" d="M15.27,13.5" transform="translate(2.064 1.767)" fill="#0062ff"/>
+        <path id="Path_4968-3" data-name="Path 4968" d="M36.3,27.533v-3.5L22.276,15.267V5.629a2.629,2.629,0,1,0-5.257,0v9.638L3,24.028v3.5l14.019-4.381V32.79l-3.5,2.629v2.629L19.648,36.3l6.133,1.752V35.419l-3.5-2.629V23.152Z" fill="#0062ff"/>
+      </g>
+      <g id="Icon_material-airplanemode-active-4" data-name="Icon material-airplanemode-active" transform="matrix(-0.656, -0.755, 0.755, -0.656, 1083.19, 272.958)">
+        <path id="Path_4967-4" data-name="Path 4967" d="M15.27,13.5" transform="translate(2.064 1.767)" fill="#0062ff"/>
+        <path id="Path_4968-4" data-name="Path 4968" d="M36.3,27.533v-3.5L22.276,15.267V5.629a2.629,2.629,0,1,0-5.257,0v9.638L3,24.028v3.5l14.019-4.381V32.79l-3.5,2.629v2.629L19.648,36.3l6.133,1.752V35.419l-3.5-2.629V23.152Z" fill="#0062ff"/>
+      </g>
+      <g id="Icon_material-airplanemode-active-5" data-name="Icon material-airplanemode-active" transform="translate(1091.792 521.641) rotate(173)">
+        <path id="Path_4967-5" data-name="Path 4967" d="M15.27,13.5" transform="translate(2.064 1.767)" fill="#0062ff"/>
+        <path id="Path_4968-5" data-name="Path 4968" d="M36.3,27.533v-3.5L22.276,15.267V5.629a2.629,2.629,0,1,0-5.257,0v9.638L3,24.028v3.5l14.019-4.381V32.79l-3.5,2.629v2.629L19.648,36.3l6.133,1.752V35.419l-3.5-2.629V23.152Z" fill="#0062ff"/>
+      </g>
+      <g id="Icon_material-airplanemode-active-6" data-name="Icon material-airplanemode-active" transform="translate(439.655 626.615) rotate(-85)">
+        <path id="Path_4967-6" data-name="Path 4967" d="M15.27,13.5" transform="translate(5.079 4.347)" fill="#0062ff"/>
+        <path id="Path_4968-6" data-name="Path 4968" d="M43.3,32.693V28.451L26.33,17.847V6.181a3.181,3.181,0,1,0-6.363,0V17.847L3,28.451v4.242l16.968-5.3V39.056l-4.242,3.181v3.181L23.149,43.3l7.423,2.121V42.237L26.33,39.056V27.391Z" transform="translate(0 0)" fill="#0062ff"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160.206" height="114.348" viewBox="0 0 160.206 114.348">
+  <g id="Group_1443" data-name="Group 1443" transform="translate(-314.144 -2842.036)">
+    <path id="Icon_awesome-video" data-name="Icon awesome-video" d="M18.487,0H2.628A2.628,2.628,0,0,0,0,2.628V18.487a2.628,2.628,0,0,0,2.628,2.628H18.487a2.628,2.628,0,0,0,2.628-2.628V2.628A2.628,2.628,0,0,0,18.487,0ZM28.9,2.073,22.875,6.23v8.655L28.9,19.037a1.763,1.763,0,0,0,2.771-1.419V3.492A1.764,1.764,0,0,0,28.9,2.073Z" transform="matrix(0.899, -0.438, 0.438, 0.899, 325.392, 2935.758)" fill="#525252"/>
+    <ellipse id="Ellipse_2281" data-name="Ellipse 2281" cx="7.924" cy="7.924" rx="7.924" ry="7.924" transform="matrix(0.899, -0.438, 0.438, 0.899, 314.144, 2931.02)" fill="red"/>
+    <text id="live" transform="translate(373.749 2940.127) rotate(-17)" fill="red" font-size="67" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">live</tspan></text>
+  </g>
+</svg>

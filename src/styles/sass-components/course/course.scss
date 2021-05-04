@@ -1,5 +1,84 @@
 .course{
   background: $color-white;
+  &__other{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    & img{
+      flex-basis: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &_text{
+      flex-basis: 50%;
+      padding: 5rem 0;
+      position: relative;
+      &-title{
+        color: $color-exim-blue;
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+      }
+      &-content{
+        font-size: 2rem;
+        margin-bottom: 5rem;
+        padding-right: 5rem;
+      }
+      & a{
+        position: absolute;
+        right: 0;
+        bottom: 2rem;
+        width: 20rem;
+
+      }
+    }
+  }
+  &__div{
+    position: relative;
+    &_row{
+      position: absolute;
+      width: calc(100% - 10rem);
+      background-image: linear-gradient(to top,rgba($color-white,.8) 30% ,transparent 100%);
+      bottom: 0;
+      left: 5rem;
+      padding-bottom:2rem;
+      height: 20rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      z-index: 5;
+      &-head{
+        font-size: 3.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        flex-grow: 1;
+      }
+      &-a{
+        padding: 0rem 5rem;
+        margin-right: 3rem;
+        color: $color-white;
+        font-size: 1.5rem;
+        background: $color-exim-blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        & > *{
+          margin: 1rem;
+
+        }
+      }
+    }
+    &_route{
+      position: absolute;
+      top: -11rem;
+      left: 23rem;
+      width: 68%;
+    }
+
+  }
   &__btnWrap{
     display: flex;
     justify-content: flex-end;
@@ -32,11 +111,12 @@
   &__wrapper{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 6rem;
-    margin: 4rem 15rem;
-    z-index: 0;
+    grid-gap: 4rem;
+    margin: 15rem 5rem;
+    // z-index: 0;
     &_box{
-      width: 90%;
+      box-shadow: 0 0 1rem #CBC9C9;
+      width: 100%;
       &-lock{
         display: flex;
         justify-content:space-between;
@@ -50,36 +130,45 @@
         & img{
         }
       }
-      &:hover  .small-lock{
-        animation : shake .5s linear infinite;
+      &-1{
+        background: #FFFFFF;
       }
-      height: 20rem;
-      overflow: hidden;
+      &-2{
+        background: #F4F4F4;
+      }
+      &-3{
+        background: #EAEAEA;
+      }
+      &-4{
+        background: #B7B7B7;
+        // z-index: -1;
+      }
+      &-5{
+        background: #CBC9C9;
+      }
+      &-6{
+        background: #D8D8D8;
+      }
+      height: 18rem;
+      // overflow: hidden;
       position: relative;
       border-radius: 18px;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      z-index: 100;
-      &-img{
-         position: absolute;
-         bottom: 0;
-         animation: wave 5s linear infinite;
-         z-index: -1;
-      }
       &-title{
-        color:$color-exim-dark-grey;
+        color:#484848;
         text-align:center;
-        font-size: 2.2rem;
+        font-size: 2rem;
         margin-bottom: 3rem;
         font-weight: bold;
         padding: 0 3rem;
       }
       &-count{
         position: absolute;
-        top: 0;
-        left:0;
+        top: -1rem;
+        left:-1rem;
         font-size: 2.4rem;
         color: $color-white;
         background: $color-exim-dark-grey;
@@ -108,4 +197,14 @@
       }
     }
   }
+
+}
+.bottomFade{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 20rem;
+  background-image: linear-gradient(to top,rgba($color-white,1) ,transparent);
+  color: transparent;
 }

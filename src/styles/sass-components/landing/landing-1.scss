@@ -83,12 +83,13 @@
            background: $color-exim-blue;
            color: transparent;
            clip-path: polygon(0 0, 79% 30%, 100% 50%, 82% 72%, 0 100%);
+           clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
          }
 
          & img{
            font-weight: lighter;
            font-size: 3.5rem;
-           margin-left: 0.5rem;
+           margin-left: 1.5rem;
            transition: all .3s;
 
            // line-height: 3;
