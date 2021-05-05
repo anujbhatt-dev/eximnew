@@ -160,3 +160,21 @@ a {
     text-decoration: none;
   }
 }
+.layout{
+  position:relative;
+  &__city{
+    position: absolute;
+    top: 0;
+    right: 0rem;
+    background: $color-exim-blue;
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding: 6rem 5rem 2rem 5rem;
+    // z-index: 100000;
+    @include respond(tab-port){
+      padding: 2rem 2rem 2rem 2rem;
+    }
+  }
+}

@@ -55,7 +55,7 @@ componentDidMount=()=>{
 
     return (
           <div className="layout">
-
+               <div className="layout__city">hydrabad</div>
                <Switch>
 
               <Route exact  path="/admin">
